@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7EE6B15-5697-4911-B7DB-40DE8330FBD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PFR_Floreria.My.MyApplication</StartupObject>
+    <RootNamespace>PFR_Floreria</RootNamespace>
+    <AssemblyName>PFR_Floreria</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PFR_Floreria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PFR_Floreria.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arreglo.Designer.vb">
+      <DependentUpon>Arreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.vb">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra.Designer.vb">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Compra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="Empleado.Designer.vb">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Empleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flor.Designer.vb">
+      <DependentUpon>Flor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Flor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Floreria20DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Floreria20DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Floreria20DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Floreria20DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Flor_Arreglo.Designer.vb">
+      <DependentUpon>Flor_Arreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Flor_Arreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargoEmpleado.Designer.vb">
+      <DependentUpon>FrmCargoEmpleado.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HorarioEmpleado.Designer.vb">
+      <DependentUpon>HorarioEmpleado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HorarioEmpleado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.vb">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Proveedor.Designer.vb">
+      <DependentUpon>Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursal.Designer.vb">
+      <DependentUpon>Sucursal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sucursal_Cliente.Designer.vb">
+      <DependentUpon>Sucursal_Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sucursal_Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tamanio_Arreglo.Designer.vb">
+      <DependentUpon>Tamanio_Arreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tamanio_Arreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temporada.Designer.vb">
+      <DependentUpon>Temporada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Temporada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Arreglo.Designer.vb">
+      <DependentUpon>Tipo_Arreglo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Arreglo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Flor.Designer.vb">
+      <DependentUpon>Tipo_Flor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Flor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Pago.Designer.vb">
+      <DependentUpon>Tipo_Pago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Pago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Proveedor.Designer.vb">
+      <DependentUpon>Tipo_Proveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Proveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tipo_Venta.Designer.vb">
+      <DependentUpon>Tipo_Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.vb">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Arreglo.resx">
+      <DependentUpon>Arreglo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra.resx">
+      <DependentUpon>Compra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleado.resx">
+      <DependentUpon>Empleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flor.resx">
+      <DependentUpon>Flor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flor_Arreglo.resx">
+      <DependentUpon>Flor_Arreglo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCargoEmpleado.resx">
+      <DependentUpon>FrmCargoEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HorarioEmpleado.resx">
+      <DependentUpon>HorarioEmpleado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedor.resx">
+      <DependentUpon>Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursal.resx">
+      <DependentUpon>Sucursal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sucursal_Cliente.resx">
+      <DependentUpon>Sucursal_Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tamanio_Arreglo.resx">
+      <DependentUpon>Tamanio_Arreglo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temporada.resx">
+      <DependentUpon>Temporada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Arreglo.resx">
+      <DependentUpon>Tipo_Arreglo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Flor.resx">
+      <DependentUpon>Tipo_Flor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Pago.resx">
+      <DependentUpon>Tipo_Pago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Proveedor.resx">
+      <DependentUpon>Tipo_Proveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tipo_Venta.resx">
+      <DependentUpon>Tipo_Venta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Floreria20DataSet.xsc">
+      <DependentUpon>Floreria20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Floreria20DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Floreria20DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Floreria20DataSet.xss">
+      <DependentUpon>Floreria20DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Floreria20DataSet1.xsc">
+      <DependentUpon>Floreria20DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Floreria20DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Floreria20DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Floreria20DataSet1.xss">
+      <DependentUpon>Floreria20DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
